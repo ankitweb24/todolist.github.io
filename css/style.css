@@ -1,0 +1,156 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.main_div{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headdata{
+    position: relative;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: rgb(0,0,0,.5);
+    font-weight: bold;
+    user-select: none;
+    font-size: 2.4rem;
+}
+.box{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0,0,0,.2);
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.box .add{
+    position: absolute;
+    z-index: 99;
+    /* padding: 10px; */
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow:0px 10px 12px 0px rgb(0 0 0 / 20%);
+    margin-top: 4px;
+    color: rgb(21, 196, 21);
+    transition-duration: 100ms;
+    bottom: -35px;
+}
+.add:active{
+    box-shadow: none;
+}
+.box .header{
+    width: 100%;
+    height: 155px;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(to right,rgba(0, 26, 255, 0.452),rgba(148, 3, 185, 0.486)) ,url(../images/settt.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.header strong{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header small{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-transform:capitalize;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.box input{
+    width: 100%;
+    height: 35px;
+    margin: 20px 0;
+    padding-left: 14px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6px rgb(0,0,0,.2);
+    border-radius: 30px;
+}
+.box h3{
+    color: rgb(0,0,0,.5);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+    transition-duration: 400ms;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.404);
+}
+ul{
+    list-style: none;
+    position: relative;
+}
+ul li{
+    width: 100%;
+    background-color: rgb(121, 109, 235);
+    margin: 3px 0;
+    padding: 10px 0 10px 10px;
+    font-size: .9rem;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 300ms;
+    user-select: none;
+}
+ul li span{
+    position: absolute;right: 2%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: red;
+    place-items: center;
+    display: grid;
+    bottom: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+    transition-duration: 100ms;
+}
+ul li span:hover{
+    transform: translateY(50%) scale(1.1);
+}
+
+.checked{
+    cursor: pointer;
+    background-color: rgb(0,0,0,.6);
+    transition-duration: 300ms;
+    text-decoration: line-through;
+}
+
+
+@media (max-width:768px) {
+    .box{
+        width: 90%;
+    }
+}
